@@ -8,7 +8,6 @@ async function getMatchData() {
 
       if (!matchesList) return [];
 
-      //add your api key from cricketdata.org
       const relevantData = matchesList.filter((match) => match.series_id == "4eeb97cf-9700-49a6-98f3-8854925befa0").map((match) => `${match.name}, ${match.status}`);
 
       console.log({ relevantData });
